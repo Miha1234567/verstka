@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1366px; /* Ширина страницы */
+    height: 1485px; /* Высота страницы */
+    margin: 0 auto;
+    }
+    
+    header, main, footer {
+    display: none;
+    }
+    
+    .readers {
+    background-color: #5D5FEF;
+    height: 742.5px;
+    position: relative; /* Добавляем относительное позиционирование для родительского элемента */
+    }
+    
+    .photo {
+    position: absolute; /* Абсолютное позиционирование для точного размещения */
+    top: 60px; /* Отступ сверху */
+    left: 113px; /* Отступ слева */
+    width: 555px; /* Ширина фотографии */
+    height: 570px; /* Высота фотографии */
+    }
+    
+    .footer {
+    height: 742.5px;
+    background-color: #cecece;
+    }
