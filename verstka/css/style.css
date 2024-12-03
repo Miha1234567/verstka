@@ -25,7 +25,7 @@ margin: 0 auto;
 
 .header {
   background: var(--Black, #232536);
-  width: 4356px;
+  width: 4346px;
   gap: 20px;
   color: var(--Light, #fff);
   flex-wrap: wrap;
