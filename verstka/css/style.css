@@ -1,8 +1,8 @@
 body {
 margin: 0;
 padding: 0;
-width: 4346px; /* Ширина страницы */
-height: 1440px; /* Высота страницы */
+width: 1440px; /* Ширина страницы */
+height: 4346px; /* Высота страницы */
 margin: 0 auto;
 }
 .visually-hidden {
