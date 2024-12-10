@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+        .sen-sen {
+        font-family: "Sen", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .inter-inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+        header {
+            display: flex;
+            background-color: #232536;
+            height: 80px;
+            width: 1440px;
+        }
+        .icon {
+            display: flex;
+            margin-left: 83px;
+            margin-top: 25px;
+            margin-bottom: 26.65px;
+            height: 28.35px;
+            width: 140px;
+        }
+        .navigation {
+            margin-left: 621px;
+            margin-top: 26px;
+            margin-bottom: 25px;
+            width: 305px;
+            height: 29px;
+            display: flex;
+            align-items: center;
+        }
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            margin: 0px;
+            padding: 0%;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+        li {
+            white-space: nowrap;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+        .btnheader {
+            font-family: Sen;
+            width: 179px;
+            height: 56px;
+            margin-top: 12px;
+            margin-left: 32px;
+            color: #232536;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            background-color: #FFFFFF;
+            border: 0;
+        }
+        .blog {
+            margin-top: 128px;
+            margin-left: 336px;
+            width: 768px;
+            height: 282px;
+        }
+        .blog .author {
+            height: 64px;
+            width: 288px;
+            display: flex;
+        }
+        .blog .author .info {
+            margin-left: 16px;
+            width: 224px;
+            height: 64px;
+        }
+        .styleh3 {
+            font-family: Sen;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -1px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .blog .author .info span {
+            color: #592EA9;
+        }
+        .body1 {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .blog .author .info div {
+            white-space: nowrap;
+            color: #6D6E76;
+        }
+        h1 {
+            font-family: Sen;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+            margin-top: 24px;
+            width: 768px;
+            height: 128px;
+            margin-bottom: 0;
+        }
+        .blog .label {
+            margin-top: 34px;
+            width: 120px;
+            height: 32px;
+            color: #232536;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .h4 {
+            font-family: Sen;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .main_photo {
+            margin-left: 80px;
+            margin-top: 64px;
+        }
+        .text {
+            margin-left: 299px;
+            margin-top: 64px;
+            width: 843px;
+            height: 1164px;
+        }
+        h2 {
+            font-family: Sen;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+        }
+        .text div {
+            color: #6D6E76;
+        }
+        .text ul {
+            color: #494a52;
+            list-style: none;
+            padding: 0;
+            row-gap: 2px;
+        }
+        .text li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .articles_container {
+            margin-top: 128px;
+            margin-left: 80px;
+            width: 1280px;
+            height: 782px;
+            border-bottom: 1px solid #d4d4d6;
+        }
+        .articles {
+            margin-top: 64px;
+            display: flex;
+            gap: 32px;
+            width: 1279px;
+            height: 606px;
+        }
+        article {
+            width: 405px;
+            height: 606px;
+        }
+        article img {
+            width: 405px;
+            height: 318px;
+        }
+        article div {
+            margin-top: 32px;
+            width: 405px;
+            height: 256px;
+        }
+        .label01 {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #4C4C4C;
+        }
+        .label01 span {
+            color: #592EA9;
+        }
+        article .styleh3 {
+            color: #232536; 
+            margin-top: 16px; 
+            width: 405px;
+            height: 120px;
+        }
+        article .body1 {
+            margin-top: 16px;
+            width: 405px;
+            height: 84px;
+            opacity: 0,7;
+        }
+        .ourteam {
+            width: 414px;
+            height: 256px;
+            margin-left: 505px;
+            margin-top: 128px;
+            text-align: center;
+            justify-content: center;
+        }
+        .ourteam h2 {
+            text-align: center;
+            margin: 0;
+        }
+        .ourteam .body1 {
+            text-align: center;
+            margin-top: 16px;
+        }
+        .btnref {
+            background-color: #FFD050;
+            color: #232536;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 48px;
+            padding-right: 48px;
+            display: inline-block;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .ourteam .btnref {
+            margin-top: 32px;
+        }
+        footer {
+            width: 1440px;
+            height: 550px;
+            margin-top: 128px;
+            background-color: #232536;
+            display: flex;
+        }
+        footer main {
+            width: 1280px;
+            height: 445px;
+            margin-top: 59px;
+            margin-left: 80px;
+        }
+        .iconfooter {
+            width: 140px;
+            height: 28.35px;
+        }
+        footer .navigation {
+            margin: 0;
+            margin-top: 0px;
+            margin-left: 703px;
+            padding: 0;
+        }
+        footer .upper {
+            display: flex;
+        }
+        .sub {
+            width: 1280px;
+            height: 256px;
+            background-color: #2e3040;
+            margin-top: 54.65px;
+            display: flex;
+            border: 1px solid #2e3040;
+            
+        }
+        .sub h2 {
+            width: 562px;
+            height: 96px;
+            margin-left: 64px;
+            margin-top: 80px;
+            color: #FFFFFF;
+        }
+        input {
+            background: transparent;
+            width: 323px;
+            height: 54px;
+            margin-top: 84px;
+            margin-left: 64px;
+            border: 1px solid #4C4C4C;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        input::placeholder {
+            padding-left: 24.92px;
+        }
+        footer button {
+            padding: 0;
+            width: 179px;
+            height: 56px;
+            border: 0;
+            background-color: #FFD050;
+            color: #232536;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            text-align: center;
+            margin-top: 84px;
+            margin-left: 24px;
+        }
+        footer .lower {
+            display: flex;
+        }
+        footer .body1 {
+            font-style: normal;
+            margin-top: 48px;
+        }
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 26.67px;
+            margin-left: 775px;
+            margin-top: 60px;
+            padding: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="icon" src="Logo.svg" alt="Логотип">
+        <nav class="navigation">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="btnheader">Subscribe</button>
+    </header>
+    <main>
+        <section class="blog">
+            <section class="author">
+                <img src="author.png" alt="author">
+                <section class="info">
+                    <span class="styleh3">Anrew Jonson</span>
+                    <div class="body1">Posted on <time datetime="2022-01-27">27th January 2022</time></div>
+                </section>
+            </section>
+            <h1>Step-by-step guide to choosing great font pairs</h1>
+            <section class="label h4">
+                <img src="shuttle.svg" alt="shuttle">
+                Startup
+            </section>
+        </section>
+        <img class="main_photo" src="photo-of-woman-wearing-eyeglasses-3184405.png" alt="photo-of-woman-wearing-eyeglasses-3184405">
+        <section class="text">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+            <div class="body1" style="margin-top: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</div>
+            <h2 style="margin-top: 48px ; width: 836.11px; height: 96px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+            <div class="body1" style="margin-top: 16px; width: 837px; height: 112px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</div>
+            <div class="body1" style="margin-top: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</div>
+            <ul>
+                <li class="h4"><img src="pointer.svg">Lorem ipsum dolor sit amet</li>
+                <li class="h4"><img src="pointer.svg">Non blandit massa enim nec scelerisque</li>
+                <li class="h4"><img src="pointer.svg">Neque egestas congue quisque egestas</li>
+            </ul>
+            <div class="body1" style="margin-top: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</div>
+            <h2 style="margin-top: 48px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+            <div class="body1" style="margin-top: 16px; width: 837px; height: 112px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</div>
+        </section>
+        <section class="articles_container">
+            <h2 style="color: #000000;">What to read next</h2>
+            <section class="articles">
+                <article>
+                    <img src="two-women-in-front-of-dry-erase-board-1181533.png" alt="two-women-in-front-of-dry-erase-board-1181533">
+                    <div class="label01">
+                        By <span>John Doe</span>&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;<time datetime="2021-08-23">Aug 23, 2021</time>
+                        <div class="styleh3">A UX Case Study Creating a Studious Environment for Students:</div>
+                        <div class="body1">Duis aute irure dolor in reprehenderit in voluptate<br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                    </div>
+                </article>
+                <article>
+                    <img src="photo-of-people-doing-handshakes-3183197.png" alt="photo-of-people-doing-handshakes-3183197.png">
+                    <div class="label01">
+                        By <span>John Doe</span>&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;<time datetime="2021-08-23">Aug 23, 2021</time>
+                        <div class="styleh3">A UX Case Study Creating a Studious Environment for Students:</div>
+                        <div class="body1">Duis aute irure dolor in reprehenderit in voluptate<br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                    </div>
+                </article>
+                <article>
+                    <img src="photo-of-woman-looking-at-man-3183173.png" alt="photo-of-woman-looking-at-man-3183173.png">
+                    <div class="label01">
+                        By <span>John Doe</span>&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;<time datetime="2021-08-23">Aug 23, 2021</time>
+                        <div class="styleh3">A UX Case Study Creating a Studious Environment for Students:</div>
+                        <div class="body1">Duis aute irure dolor in reprehenderit in voluptate<br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <article class="ourteam">
+            <h2>Join our team to be a part of our story</h2>
+            <div class="body1" style="color: #6D6E76;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            <a class="btnref" href="#">Join Now</a>
+        </article>
+    </main>
+    <footer>
+        <main>
+            <section class="upper">
+                <img class="iconfooter" src="Logo.svg" alt="Логотип">
+                <nav class="navigation">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Privacy Police</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="sub">
+                <h2>Subscribe to our news letter to get latest updates and news</h2>
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </section>
+            <section class="lower">
+                <address class="body1" style="color: #bdbdc2;">
+                    Finstreet 118 2561 Fintown<br>
+                    Hello@finsweet.com  020 7993 2905
+                </address>
+                <ul class="social-icons-1">
+                    <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                    <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                    <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                    <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+                </ul>
+            </section>
+        </main>
+    </footer>
+    </body>
